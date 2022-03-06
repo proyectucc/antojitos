@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SupermercadoAntojitos.Api.Test/1.0.0": {
+        "runtime": {
+          "SupermercadoAntojitos.Api.Test.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SupermercadoAntojitos.Api.Test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

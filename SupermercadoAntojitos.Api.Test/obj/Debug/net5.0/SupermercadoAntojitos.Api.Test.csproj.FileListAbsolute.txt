@@ -1,0 +1,12 @@
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\bin\Debug\net5.0\SupermercadoAntojitos.Api.Test.deps.json
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\bin\Debug\net5.0\SupermercadoAntojitos.Api.Test.dll
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\bin\Debug\net5.0\ref\SupermercadoAntojitos.Api.Test.dll
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\bin\Debug\net5.0\SupermercadoAntojitos.Api.Test.pdb
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\obj\Debug\net5.0\SupermercadoAntojitos.Api.Test.csprojAssemblyReference.cache
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\obj\Debug\net5.0\SupermercadoAntojitos.Api.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\obj\Debug\net5.0\SupermercadoAntojitos.Api.Test.AssemblyInfoInputs.cache
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\obj\Debug\net5.0\SupermercadoAntojitos.Api.Test.AssemblyInfo.cs
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\obj\Debug\net5.0\SupermercadoAntojitos.Api.Test.csproj.CoreCompileInputs.cache
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\obj\Debug\net5.0\SupermercadoAntojitos.Api.Test.dll
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\obj\Debug\net5.0\ref\SupermercadoAntojitos.Api.Test.dll
+C:\Users\damora\Desktop\Prueba_MS\SupermercadoAntojitos.Api\SupermercadoAntojitos.Api.Test\obj\Debug\net5.0\SupermercadoAntojitos.Api.Test.pdb
