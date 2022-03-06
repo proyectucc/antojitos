@@ -1,0 +1,38 @@
+<h1>LISTA DE PRODUCTOS</h1>
+<br><br><br>
+
+<div class="row ">
+  <div class="col ">
+    <button type="button" class="btn btn-outline-primary" title="Actualizar registro" (click)="crearProducto()">Crear Producto</button>
+    <table class="table table-sm ">
+
+      <thead>
+        <tr>
+          <th>ID Producto</th>
+          <th>Nombre Marca</th>
+          <th>Unidades Existentes</th>
+          <th>Valor Productos x Unidad</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+      <br>
+      <tbody>
+        <tr *ngFor="let productos of productos">
+          <td>{{productos.id}}</td>
+          <td>{{productos.nombreProducto}}</td>
+          <td>{{productos.unidadesExistentes}}</td>
+          <td>$ {{productos.valorProducto}}</td>
+          <td>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-outline-danger" title="Eliminar Registro" (click)="deleteProducto(productos.id)" >Eliminar</button>
+              <button type="button" class="btn btn-outline-success" title="Actualizar registro" (click)="editarproducto(productos.id)" >Editar</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>

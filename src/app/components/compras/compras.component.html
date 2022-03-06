@@ -1,0 +1,59 @@
+<br>
+
+<h1>REGISTRO DE VENTA</h1>
+
+<br><br>
+
+<div class="container form">
+
+  <form class="row g-3" [formGroup]="frmGroup" (ngSubmit)="postForm(frmGroup.value)">
+
+    <!-- Nombres del Cliente -->
+    <div class="col-md-4">
+      <label for="inputEmail4" class="form-label">Nombres del cliente</label>
+      <input type="text" formControlName="nombres" class="form-control" id="inputEmail4"
+        placeholder="Nombres del cliente" [ngClass]="{
+        'is-invalid': frmGroup.controls['nombres'].invalid && (frmGroup.controls['nombres'].dirty || frmGroup.controls['nombres'].touched),
+        'is-valid': frmGroup.controls['nombres'].valid
+      }">
+    </div>
+
+    <!-- Documento del Cliente -->
+    <div class="col-md-4">
+      <label for="inputEmail4" class="form-label">Documento del Cliente</label>
+      <input type="text" formControlName="documentoIdentidad" class="form-control" id="inputEmail4"
+        placeholder="Documento del Cliente" [ngClass]="{
+        'is-invalid': frmGroup.controls['documentoIdentidad'].invalid && (frmGroup.controls['documentoIdentidad'].dirty || frmGroup.controls['documentoIdentidad'].touched),
+        'is-valid': frmGroup.controls['documentoIdentidad'].valid
+      }">
+    </div>
+
+    <!-- Fecha de la venta -->
+    <div class="col-md-4">
+      <label for="inputEmail4" class="form-label">Fecha de la venta</label>
+      <input type="text" formControlName="fechaVenta" class="form-control" id="inputEmail4"
+        placeholder="Fecha de la venta" [ngClass]="{
+        'is-invalid': frmGroup.controls['fechaVenta'].invalid && (frmGroup.controls['fechaVenta'].dirty || frmGroup.controls['fechaVenta'].touched),
+        'is-valid': frmGroup.controls['fechaVenta'].valid
+      }">
+    </div>
+    <div class="col-12" >
+      <button type="submit" [disabled]="frmGroup" class="btn btn-primary">Facturar</button>
+    </div>
+
+    <!-- Módulo en construccion... -->
+    <div class="container">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4">
+        <img src="../../../assets/trabajando.gif">
+      </div>
+      <div class="col-4"></div>
+      </div>
+    </div>
+
+  </form>
+
+  <!-- Formulario detalles-->
+
+</div>

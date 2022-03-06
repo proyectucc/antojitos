@@ -1,0 +1,60 @@
+<br>
+
+<h1>FORMULARIO PARA CREAR UN CLIENTE</h1>
+
+<br><br>
+
+<div class="container form">
+  <form class="row g-3" [formGroup]="frmGroup" (ngSubmit)="postForm(frmGroup.value)">
+    <div class="col-md-1"></div>
+    <!-- Campo para los nombres -->
+    <div class="col-md-4">
+      <label for="inputEmail4" class="form-label">Nombres del cliente</label>
+      <input type="text" formControlName="nombres" class="form-control" id="inputEmail4"
+        placeholder="Nombres del cliente" [ngClass]="{
+        'is-invalid': frmGroup.controls['nombres'].invalid && (frmGroup.controls['nombres'].dirty || frmGroup.controls['nombres'].touched),
+        'is-valid': frmGroup.controls['nombres'].valid
+      }">
+      <div
+        *ngIf="frmGroup.controls['nombres'].invalid && (frmGroup.controls['nombres'].dirty || frmGroup.controls['nombres'].touched)">
+        <div *ngIf="frmGroup.controls['nombres'].errors.required">
+          Nombres son requeridos.
+        </div>
+        <div *ngIf="frmGroup.controls['nombres'].errors.minlength" class="invalid-feedback">
+          nombres must be at least 4 characters long.
+        </div>
+        <div *ngIf="frmGroup.controls['nombres'].errors.forbiddenName" class="invalid-feedback">
+          Nombres cannot be Bob.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+
+    <!-- Campo para el documento de identidad -->
+    <div class="col-md-4">
+      <label for="inputEmail4" class="form-label">Documento del Cliente</label>
+      <input type="number" formControlName="documentoIdentidad" class="form-control" id="inputEmail4"
+        placeholder="Nombres del cliente" [ngClass]="{
+        'is-invalid': frmGroup.controls['documentoIdentidad'].invalid && (frmGroup.controls['documentoIdentidad'].dirty || frmGroup.controls['documentoIdentidad'].touched),
+        'is-valid': frmGroup.controls['documentoIdentidad'].valid
+      }">
+      <div
+        *ngIf="frmGroup.controls['documentoIdentidad'].invalid && (frmGroup.controls['documentoIdentidad'].dirty || frmGroup.controls['documentoIdentidad'].touched)">
+        <div *ngIf="frmGroup.controls['documentoIdentidad'].errors.required">
+          Documento es requerido.
+        </div>
+        <div *ngIf="frmGroup.controls['documentoIdentidad'].errors.minlength" class="invalid-feedback">
+          Documento must be at least 4 characters long.
+        </div>
+        <div *ngIf="frmGroup.controls['documentoIdentidad'].errors.forbiddenName" class="invalid-feedback">
+          Documento cannot be Bob.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+
+    <div class="col-1" style="padding: 18px;">
+      <button type="submit" [disabled]="frmGroup.invalid" class="btn btn-primary">Crear</button>
+    </div>
+  </form>
+</div>

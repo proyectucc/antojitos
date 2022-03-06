@@ -1,0 +1,99 @@
+<br /><br />
+<h1>FORMULARIO PARA ACTUALIZAR UN PRODUCTO</h1>
+
+<br><br><br>
+
+<div class="container form">
+  <form class="row g-3" [formGroup]="frmGroup" (ngSubmit)="putfrom(frmGroup.value)">
+
+    <!-- Nombre prodcto-->
+    <div class="col-md-4">
+      <label for="inputEmail4" class="form-label">Nombre del Producto</label>
+      <input type="text" formControlName="nombreProducto" class="form-control" id="inputEmail4"
+        placeholder="Nombre Producto" [ngClass]="{
+          'is-invalid': frmGroup.controls['nombreProducto'].invalid && (frmGroup.controls['nombreProducto'].dirty || frmGroup.controls['nombreProducto'].touched),
+          'is-valid': frmGroup.controls['nombreProducto'].valid
+        }">
+      <div
+        *ngIf="frmGroup.controls['nombreProducto'].invalid && (frmGroup.controls['nombreProducto'].dirty || frmGroup.controls['nombreProducto'].touched)">
+        <div *ngIf="frmGroup.controls['nombreProducto'].errors.required">
+          Nombre es requerido.
+        </div>
+        <div *ngIf="frmGroup.controls['nombreProducto'].errors.minlength" class="invalid-feedback">
+          Name must be at least 4 characters long.
+        </div>
+        <div *ngIf="frmGroup.controls['nombreProducto'].errors.forbiddenName" class="invalid-feedback">
+          Name cannot be Bob.
+        </div>
+      </div>
+    </div>
+
+    <!-- Campo Unidades Existentes-->
+    <div class="col-md-4">
+      <label for="inputAddress" class="form-label">Unidades Existentes</label>
+      <input type="number" class="form-control" formControlName="unidadesExistentes" id="inputAddress"
+        placeholder="Valor de la Venta del Producto" [ngClass]="{        'is-invalid': frmGroup.controls['unidadesExistentes'].invalid && (frmGroup.controls['unidadesExistentes'].dirty || frmGroup.controls['unidadesExistentes'].touched),
+        'is-valid': frmGroup.controls['unidadesExistentes'].valid
+      }">
+      <div
+        *ngIf="frmGroup.controls['unidadesExistentes'].invalid && (frmGroup.controls['unidadesExistentes'].dirty || frmGroup.controls['unidadesExistentes'].touched)">
+        <div *ngIf="frmGroup.controls['unidadesExistentes'].errors.required">
+          Unidades existentes del Producto son Requerido.
+        </div>
+        <div *ngIf="frmGroup.controls['unidadesExistentes'].errors.forbiddenName" class="invalid-feedback">
+          Unidades existentes del Producto no es Valido.
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Valor producto -->
+    <div class="col-md-4">
+      <label for="inputPassword4" class="form-label">Valor Producto Unidad</label>
+      <input type="number" formControlName="valorProducto" class="form-control" id="inputPassword4"
+        placeholder="Valor Producto Unidad $" [ngClass]="{        'is-invalid': frmGroup.controls['valorProducto'].invalid && (frmGroup.controls['valorProducto'].dirty || frmGroup.controls['valorProducto'].touched),
+        'is-valid': frmGroup.controls['valorProducto'].valid
+      }">
+
+
+      <div
+        *ngIf="frmGroup.controls['valorProducto'].invalid && (frmGroup.controls['valorProducto'].dirty || frmGroup.controls['valorProducto'].touched)">
+        <div *ngIf="frmGroup.controls['valorProducto'].errors.required">
+          El valor del Producto es Requerido.
+        </div>
+        <div *ngIf="frmGroup.controls['valorProducto'].errors.forbiddenName" class="invalid-feedback">
+          El valor del Producto no es Valido.
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Descripcion -->
+    <div class="col-md-10">
+      <label for="inputPassword4" class="form-label">Descripción</label>
+      <input type="text" formControlName="descripcion" class="form-control" id="descripcion"
+        placeholder="Descripción del Producto" [ngClass]="{
+                'is-invalid': frmGroup.controls['descripcion'].invalid && (frmGroup.controls['descripcion'].dirty || frmGroup.controls['descripcion'].touched),
+                'is-valid': frmGroup.controls['descripcion'].valid
+              }">
+      <div
+        *ngIf="frmGroup.controls['descripcion'].invalid && (frmGroup.controls['descripcion'].dirty || frmGroup.controls['descripcion'].touched)">
+        <div *ngIf="frmGroup.controls['descripcion'].errors.required">
+          Nombre es requerido.
+        </div>
+        <div *ngIf="frmGroup.controls['descripcion'].errors.minlength" class="invalid-feedback">
+          Name must be at least 4 characters long.
+        </div>
+        <div *ngIf="frmGroup.controls['descripcion'].errors.forbiddenName" class="invalid-feedback">
+          Name cannot be Bob.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-1"></div>
+    <div class="col-1">
+      <button type="submit" [disabled]="frmGroup.invalid" class="btn btn-primary">Editar</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,28 @@
+<div>
+  <div class="container">
+    <div class="row text-center login-page">
+      <div class="col-md-12 login-form">
+        <form action="claseDestino.php" [formGroup]="frmGroup">
+          <br /><br />
+          <div class="row">
+            <div class="col-md-12 login-form-header">
+              <p class="login-form-font-header">Generar <span>Venta</span>
+              <p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 login-from-row">
+              <input type="number" placeholder="Escriba el documento del cliente" formControlName="numberDocument"
+                required autofocus placeholder="Número documento"  required />
+            </div>
+          </div>
+          <br /><br />
+          <div class="row">
+            <div class="col-md-12 login-from-row">
+              <button (click)="validateDocument()" class="btn btn-info" [disabled]="frmGroup.invalid" tabindex="0"  title="Ingresar">Ingresar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
